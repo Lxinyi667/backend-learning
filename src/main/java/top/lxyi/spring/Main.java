@@ -1,4 +1,4 @@
-package top.lxyi;
+package top.lxyi.spring;
 
 public class Main {
     public static void main(String[] args) {
