@@ -11,6 +11,7 @@
     <properties>
         <maven.compiler.source>18</maven.compiler.source>
         <maven.compiler.target>18</maven.compiler.target>
+        <spring.version>6.0.6</spring.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
@@ -34,5 +35,6 @@
             <artifactId>spring-expression</artifactId>
             <version>5.3.19</version>
         </dependency>
+
     </dependencies>
 </project>

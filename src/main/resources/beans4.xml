@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    Spring配置文件中，Bean的作用域是通过<bean>元素的scope属性来指定的，
+该属性值可以设置为singleton、prototype、request、session、globalSession、application和websocket七个值，
+分别表示表1中的7个作用域。
+要将作用域定义成singleton，只需将scope的属性值设置为singleton即可-->
+    <bean id="scope" class="top.lxyi.spring.ioc.scope.Scope" scope="prototype"/>
+<!--    prototype：每次通过Spring获取时都会获得一个新的Bean实例-->
+</beans>
