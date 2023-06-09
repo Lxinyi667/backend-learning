@@ -1,0 +1,102 @@
+2023-04-03 14:37:14.087 | main | INFO  t.l.l.LogDemoApplication : Starting LogDemoApplication using Java 18.0.2.1 with PID 23204 (E:\backend-learning\log-demo\target\classes started by 17161 in E:\backend-learning\log-demo)
+2023-04-03 14:37:14.088 | main | INFO  t.l.l.LogDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 14:37:14.510 | main | INFO  o.s.b.w.e.t.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2023-04-03 14:37:14.516 | main | INFO  o.a.c.h.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2023-04-03 14:37:14.516 | main | INFO  o.a.c.core.StandardService : Starting service [Tomcat]
+2023-04-03 14:37:14.516 | main | INFO  o.a.c.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-03 14:37:14.564 | main | INFO  o.a.c.c.C.[.[.[/] : Initializing Spring embedded WebApplicationContext
+2023-04-03 14:37:14.566 | main | INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 453 ms
+2023-04-03 14:37:14.747 | main | INFO  o.a.c.h.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2023-04-03 14:37:14.758 | main | INFO  o.s.b.w.e.t.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2023-04-03 14:37:14.762 | main | INFO  t.l.l.LogDemoApplication : Started LogDemoApplication in 1.0 seconds (process running for 1.333)
+2023-04-03 14:37:19.920 | http-nio-8090-exec-1 | INFO  o.a.c.c.C.[.[.[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 14:37:19.920 | http-nio-8090-exec-1 | INFO  o.s.w.s.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2023-04-03 14:37:19.920 | http-nio-8090-exec-1 | INFO  o.s.w.s.DispatcherServlet : Completed initialization in 0 ms
+2023-04-03 14:37:19.934 | http-nio-8090-exec-1 | DEBUG t.l.l.c.LogController : debug 日志
+2023-04-03 14:37:19.934 | http-nio-8090-exec-1 | INFO  t.l.l.c.LogController : info 日志
+2023-04-03 14:37:19.934 | http-nio-8090-exec-1 | WARN  t.l.l.c.LogController : warn日志
+2023-04-03 14:37:19.934 | http-nio-8090-exec-1 | ERROR t.l.l.c.LogController : error日志
+2023-04-03 14:37:36.533 | http-nio-8090-exec-4 | DEBUG t.l.l.c.LogController : debug 日志
+2023-04-03 14:37:36.533 | http-nio-8090-exec-4 | INFO  t.l.l.c.LogController : info 日志
+2023-04-03 14:37:36.533 | http-nio-8090-exec-4 | WARN  t.l.l.c.LogController : warn日志
+2023-04-03 14:37:36.534 | http-nio-8090-exec-4 | ERROR t.l.l.c.LogController : error日志
+2023-04-03 14:37:48.497 | http-nio-8090-exec-6 | DEBUG t.l.l.c.LogController : debug 日志
+2023-04-03 14:37:48.497 | http-nio-8090-exec-6 | INFO  t.l.l.c.LogController : info 日志
+2023-04-03 14:37:48.497 | http-nio-8090-exec-6 | WARN  t.l.l.c.LogController : warn日志
+2023-04-03 14:37:48.497 | http-nio-8090-exec-6 | ERROR t.l.l.c.LogController : error日志
+2023-04-03 14:38:00.608 | main | INFO  t.l.l.LogDemoApplication : Starting LogDemoApplication using Java 18.0.2.1 with PID 24928 (E:\backend-learning\log-demo\target\classes started by 17161 in E:\backend-learning\log-demo)
+2023-04-03 14:38:00.608 | main | INFO  t.l.l.LogDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 14:38:01.049 | main | INFO  o.s.b.w.e.t.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2023-04-03 14:38:01.058 | main | INFO  o.a.c.h.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2023-04-03 14:38:01.058 | main | INFO  o.a.c.core.StandardService : Starting service [Tomcat]
+2023-04-03 14:38:01.059 | main | INFO  o.a.c.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-03 14:38:01.113 | main | INFO  o.a.c.c.C.[.[.[/] : Initializing Spring embedded WebApplicationContext
+2023-04-03 14:38:01.113 | main | INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 473 ms
+2023-04-03 14:38:01.285 | main | INFO  o.a.c.h.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2023-04-03 14:38:01.299 | main | INFO  o.s.b.w.e.t.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2023-04-03 14:38:01.304 | main | INFO  t.l.l.LogDemoApplication : Started LogDemoApplication in 1.007 seconds (process running for 1.369)
+2023-04-03 14:38:12.553 | http-nio-8090-exec-1 | INFO  o.a.c.c.C.[.[.[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 14:38:12.553 | http-nio-8090-exec-1 | INFO  o.s.w.s.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2023-04-03 14:38:12.554 | http-nio-8090-exec-1 | INFO  o.s.w.s.DispatcherServlet : Completed initialization in 1 ms
+2023-04-03 14:38:12.565 | http-nio-8090-exec-1 | DEBUG t.l.l.c.LogController : debug 日志
+2023-04-03 14:38:12.566 | http-nio-8090-exec-1 | INFO  t.l.l.c.LogController : info 日志
+2023-04-03 14:38:12.566 | http-nio-8090-exec-1 | WARN  t.l.l.c.LogController : warn日志
+2023-04-03 14:38:12.566 | http-nio-8090-exec-1 | ERROR t.l.l.c.LogController : error日志
+2023-04-03 14:56:59.796 | main | INFO  t.l.l.LogDemoApplication : Starting LogDemoApplication using Java 18.0.2.1 with PID 22676 (E:\backend-learning\log-demo\target\classes started by 17161 in E:\backend-learning\log-demo)
+2023-04-03 14:56:59.797 | main | INFO  t.l.l.LogDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 14:57:00.280 | main | INFO  o.s.b.w.e.t.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2023-04-03 14:57:00.285 | main | INFO  o.a.c.h.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2023-04-03 14:57:00.286 | main | INFO  o.a.c.core.StandardService : Starting service [Tomcat]
+2023-04-03 14:57:00.286 | main | INFO  o.a.c.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-03 14:57:00.336 | main | INFO  o.a.c.c.C.[.[.[/] : Initializing Spring embedded WebApplicationContext
+2023-04-03 14:57:00.337 | main | INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 510 ms
+2023-04-03 14:57:00.518 | main | INFO  o.a.c.h.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2023-04-03 14:57:00.532 | main | INFO  o.s.b.w.e.t.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2023-04-03 14:57:00.539 | main | INFO  t.l.l.LogDemoApplication : Started LogDemoApplication in 1.104 seconds (process running for 1.502)
+2023-04-03 14:57:08.038 | http-nio-8090-exec-2 | INFO  o.a.c.c.C.[.[.[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 14:57:08.038 | http-nio-8090-exec-2 | INFO  o.s.w.s.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2023-04-03 14:57:08.038 | http-nio-8090-exec-2 | INFO  o.s.w.s.DispatcherServlet : Completed initialization in 0 ms
+2023-04-03 14:57:08.052 | http-nio-8090-exec-2 | DEBUG t.l.l.c.LogController : debug 日志
+2023-04-03 14:57:08.053 | http-nio-8090-exec-2 | INFO  t.l.l.c.LogController : info 日志
+2023-04-03 14:57:08.053 | http-nio-8090-exec-2 | WARN  t.l.l.c.LogController : warn日志
+2023-04-03 14:57:08.053 | http-nio-8090-exec-2 | ERROR t.l.l.c.LogController : error日志
+2023-04-03 14:58:46.743 | main | INFO  t.l.l.LogDemoApplication : Starting LogDemoApplication using Java 18.0.2.1 with PID 12036 (E:\backend-learning\log-demo\target\classes started by 17161 in E:\backend-learning\log-demo)
+2023-04-03 14:58:46.744 | main | INFO  t.l.l.LogDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 14:58:47.232 | main | INFO  o.s.b.w.e.t.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2023-04-03 14:58:47.236 | main | INFO  o.a.c.h.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2023-04-03 14:58:47.237 | main | INFO  o.a.c.core.StandardService : Starting service [Tomcat]
+2023-04-03 14:58:47.237 | main | INFO  o.a.c.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-03 14:58:47.286 | main | INFO  o.a.c.c.C.[.[.[/] : Initializing Spring embedded WebApplicationContext
+2023-04-03 14:58:47.286 | main | INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 508 ms
+2023-04-03 14:58:47.469 | main | INFO  o.a.c.h.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2023-04-03 14:58:47.482 | main | INFO  o.s.b.w.e.t.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2023-04-03 14:58:47.488 | main | INFO  t.l.l.LogDemoApplication : Started LogDemoApplication in 1.096 seconds (process running for 1.503)
+2023-04-03 14:59:05.080 | http-nio-8090-exec-1 | INFO  o.a.c.c.C.[.[.[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 14:59:05.080 | http-nio-8090-exec-1 | INFO  o.s.w.s.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2023-04-03 14:59:05.081 | http-nio-8090-exec-1 | INFO  o.s.w.s.DispatcherServlet : Completed initialization in 1 ms
+2023-04-03 14:59:05.093 | http-nio-8090-exec-1 | DEBUG t.l.l.c.LogController : debug 日志
+2023-04-03 14:59:05.093 | http-nio-8090-exec-1 | INFO  t.l.l.c.LogController : info 日志
+2023-04-03 14:59:05.093 | http-nio-8090-exec-1 | WARN  t.l.l.c.LogController : warn日志
+2023-04-03 14:59:05.093 | http-nio-8090-exec-1 | ERROR t.l.l.c.LogController : error日志
+2023-04-03 14:59:20.035 | main | INFO  t.l.l.LogDemoApplication : Starting LogDemoApplication using Java 18.0.2.1 with PID 22332 (E:\backend-learning\log-demo\target\classes started by 17161 in E:\backend-learning\log-demo)
+2023-04-03 14:59:20.036 | main | INFO  t.l.l.LogDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 14:59:20.527 | main | INFO  o.s.b.w.e.t.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2023-04-03 14:59:20.532 | main | INFO  o.a.c.h.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2023-04-03 14:59:20.532 | main | INFO  o.a.c.core.StandardService : Starting service [Tomcat]
+2023-04-03 14:59:20.532 | main | INFO  o.a.c.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-03 14:59:20.586 | main | INFO  o.a.c.c.C.[.[.[/] : Initializing Spring embedded WebApplicationContext
+2023-04-03 14:59:20.587 | main | INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 523 ms
+2023-04-03 14:59:20.834 | main | INFO  o.a.c.h.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2023-04-03 14:59:20.858 | main | INFO  o.s.b.w.e.t.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2023-04-03 14:59:20.866 | main | INFO  t.l.l.LogDemoApplication : Started LogDemoApplication in 1.195 seconds (process running for 1.603)
+2023-04-03 15:03:55.309 | main | INFO  t.l.l.LogDemoApplication : Starting LogDemoApplication using Java 18.0.2.1 with PID 16244 (E:\backend-learning\log-demo\target\classes started by 17161 in E:\backend-learning\log-demo)
+2023-04-03 15:03:55.310 | main | INFO  t.l.l.LogDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 15:03:55.782 | main | INFO  o.s.b.w.e.t.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2023-04-03 15:03:55.786 | main | INFO  o.a.c.h.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2023-04-03 15:03:55.786 | main | INFO  o.a.c.core.StandardService : Starting service [Tomcat]
+2023-04-03 15:03:55.786 | main | INFO  o.a.c.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-03 15:03:55.844 | main | INFO  o.a.c.c.C.[.[.[/] : Initializing Spring embedded WebApplicationContext
+2023-04-03 15:03:55.844 | main | INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 507 ms
+2023-04-03 15:03:56.017 | main | INFO  o.a.c.h.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2023-04-03 15:03:56.032 | main | INFO  o.s.b.w.e.t.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2023-04-03 15:03:56.037 | main | INFO  t.l.l.LogDemoApplication : Started LogDemoApplication in 1.093 seconds (process running for 1.489)

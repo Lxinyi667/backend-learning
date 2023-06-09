@@ -1,0 +1,5 @@
+server:
+  port: 8090
+context:
+  listener:
+    classes:top.lxyi.event.MyListener3

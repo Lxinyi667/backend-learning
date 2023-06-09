@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sse-demo</title>
+</head>
+<body>
+  <div id="msg-box">
+      接收服务端推送信息
+  </div>
+
+  <script>
+
+
+    //兼容性判断
+    if (typeof (EventSource)!== "undefined"){
+        // 指定请求路由
+        let source = new EventSource("http://localhost:8089/sse/msg");
+        // 当连接正式建立时除法
+        source.onopen =(e)=>{
+            console.log(e);
+        }
+        // 监听信息的传输
+        source.onmessage = (e) => {
+            console.log(e)
+            // e.origin:服务器端URL的域名部分，有protocol,hostname,port
+            console.log(e.origin)
+            // e.data:服务器端传回的数据
+            document.getElementById("msg-box").innerHTML = e.data
+            if (!e.data){
+            //     数据传输完毕，无数据时关闭连接
+                source.close()
+            }
+        }
+    //     当数据传输完毕，无数据时关闭连接
+        source.onerror =(e)=>{
+            console.log(e);
+        };
+    //     let msg =''
+    // //     打开连接
+    //     source.addEventListener('open' , ()=>{
+    //         console.log('打开连接...')
+    //     }, false);
+    // //     接收信息
+    //     source.addEventListener('message',(res)=>{
+    //         console.log(res)
+    //     })
+    //     source.addEventListener('error',(error)=>{
+    //         console.log(error);
+    //     }, false);
+
+    }else{
+        alert('当前浏览器不支持sse')
+    }
+
+  </script>
+</body>
+</html>

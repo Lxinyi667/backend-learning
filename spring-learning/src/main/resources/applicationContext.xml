@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--配置一个Bean 不会被外部随便创建，实现了解耦-->
+<!--    将指定的类配置给Spring，让Spring 容器创建其实例-->
+    <bean id="userDao" class="top.lxyi.spring.ioc.UserDaoImpl"/>
+
+    <bean id="userService" class="top.lxyi.spring.ioc.UserServiceImpl">
+<!--        将id 为Use人Dao的Bean实例注入到userService实例-->
+<!--        <property>是bean元素的子元素用于调用Bean实例中的setUserDao()方法完成属性赋值>-->
+        <property name="userDao" ref="userDao"/>
+<!--        name表示实例中的相应属性名，ref属性用于指定其属性值-->
+        <constructor-arg name="msg" value="构造方法注入"/>
+    </bean>
+<!--    Animal Bean 配置-->
+    <bean id="cat" class="top.lxyi.spring.ioc.entity.Cat">
+        <constructor-arg name="age" value="2"/>
+        <constructor-arg name="username" value="喵喵"/>
+    </bean>
+    <bean id="dog" class="top.lxyi.spring.ioc.entity.Dog">
+        <constructor-arg name="age" value="5"/>
+        <constructor-arg name="username" value="汪汪"/>
+    </bean>
+<!--    图书Bean配置-->
+    <bean id="book1" class="top.lxyi.spring.ioc.entity.Book"/>
+
+    <bean id="book2" class="top.lxyi.spring.ioc.entity.Book">
+        <constructor-arg name="bookId" value="001"/>
+        <constructor-arg name="bookName" value="Java编程基础"/>
+        <constructor-arg name="bookPrice" value="59.9"/>
+    </bean>
+    <bean id="skirt" class="top.lxyi.spring.ioc.entity.Cloth">
+        <property name="color" value="红色"/>
+        <property name="style" value="连衣裙"/>
+    </bean>
+    <bean id="suit" class="top.lxyi.spring.ioc.entity.Cloth">
+        <property name="color" value="蓝色"/>
+        <property name="style" value="小西装"/>
+    </bean>
+    <bean id="boy" class="top.lxyi.spring.ioc.entity.Person">
+        <property name="sex" value="男孩"/>
+        <property name="cloth" ref="suit"/>
+    </bean>
+    <bean id="girl" class="top.lxyi.spring.ioc.entity.Person">
+        <property name="sex" value="女孩"/>
+        <property name="cloth" ref="skirt"/>
+    </bean>
+    <bean id="p1" class="top.lxyi.spring.ioc.entity.Pen">
+        <property name="name" value="铅笔"/>
+    </bean>
+    <bean id="p2" class="top.lxyi.spring.ioc.entity.Pen">
+        <property name="name" value="圆珠笔"/>
+    </bean>
+    <bean id="p3" class="top.lxyi.spring.ioc.entity.Pen">
+        <property name="name" value="钢笔"/>
+    </bean>
+    <bean id="schoolBag" class="top.lxyi.spring.ioc.entity.SchoolBag">
+        <property name="color" value="红色"/>
+        <property name="pencilCase">
+            <list>
+                <ref bean="p1"/>
+                <ref bean="p2"/>
+                <ref bean="p3"/>
+            </list>
+        </property>
+    </bean>
+</beans>

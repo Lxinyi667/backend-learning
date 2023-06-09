@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans>
+    <bean id="course" class="top.lxyi.entity.Course">
+        <property name="code" value="200"/>
+        <property name="msg" value="操作成功"/>
+        <property name="list">
+            <list>
+                <ref bean="class1"/>
+                <ref bean="class2"/>
+                <ref bean="class3"/>
+            </list>
+        </property>
+    </bean>
+</beans>

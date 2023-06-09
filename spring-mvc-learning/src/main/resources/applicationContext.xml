@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+<!--    &lt;!&ndash;    配置注解&ndash;&gt;-->
+<!--    <context:component-scan base-package="top.lxyi.controller"  />-->
+<!--    &lt;!&ndash;    将图片/JS/CSS等静态资源排除在外，可提高执行效率&ndash;&gt;-->
+<!--    <mvc:default-servlet-handler/>-->
+<!--    &lt;!&ndash;    显示的装配自定义类型转换器&ndash;&gt;-->
+<!--    <mvc:annotation-driven conversion-service="conversionService"/>-->
+
+<!--    <bean id="viewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">-->
+<!--        &lt;!&ndash;        设置响应输出，并解决中文乱码&ndash;&gt;-->
+<!--        <property name="contentType" value="text/html;charset=utf-8"></property>-->
+<!--        &lt;!&ndash;        指定Freemaker模板文件扩展名&ndash;&gt;-->
+<!--        <property name="suffix" value=".ftl"/>-->
+<!--    </bean>-->
+<!--    <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">-->
+<!--        &lt;!&ndash;        设置模板保存的目录&ndash;&gt;-->
+<!--        <property name="templateLoaderPath" value="/WEB-INF/ftl"/>-->
+<!--        &lt;!&ndash;        其他模板引擎设置&ndash;&gt;-->
+<!--        <property name="freemarkerSettings">-->
+<!--            <props>-->
+<!--                &lt;!&ndash;                设置Freemaker脚本与数据渲染时使用的字符集&ndash;&gt;-->
+<!--                <prop key="defaultEncoding">UTF-8</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+<!--    </bean>-->
+    <!--    自定义类型转换器配置-->
+    <!--<bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">-->
+    <!--    <property name="converters">-->
+    <!--        <set>-->
+    <!--            <bean class="top.lxyi.converter.DateConverter"/>-->
+    <!--        </set>-->
+    <!--    </property>-->
+    <!--</bean>-->
+</beans>

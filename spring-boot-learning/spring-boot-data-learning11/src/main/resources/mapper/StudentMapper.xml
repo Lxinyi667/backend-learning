@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.lxyi.mapper.StudentMapper">
+<!--声明关联查询的结果集-->
+    <resultMap id="studentMap" type="Student">
+        <id column="student_id" property="studentId"/>
+        <result column="clazz_id" property="clazzId"/>
+        <result column="student_name" property="studentName"/>
+        <result column="hometown" property="hometown"/>
+        <result column="birthday" property="birthday"/>
+       <association property="clazz" javaType="clazz">
+           <id column="clazz_id" property="clazzId"/>
+           <result column="clazz_name" property="clazzName"/>
+       </association>
+        <collection property="courses" ofType="Course">
+            <id column="course_id" property="courseId"/>
+            <result column="course_name" property="courseName" />
+        </collection>
+    </resultMap>
+<!--selectManyToOne-->
+    <select id="getStudent" resultMap="studentMap" parameterType="int">
+        SELECT s.student_id,s.student_name,s.hometown,s.birthday,
+               c.clazz_id,c.clazz_name,
+               cc.course_id,cc.course_name
+        FROM  t_student s
+                    left join t_clazz c
+                on s.clazz_id = c.clazz_id
+                    left join t_course_student ts
+                on s.student_id = ts.student_id
+                    left join t_course cc
+                on ts.course_id = cc.course_id
+        WHERE s.student_id= #{studentId}
+    </select>
+
+    <insert id="batchInert" parameterType="Student">
+        INSERT INTO t_student VALUES
+            <foreach collection="students" item="student" index="index" separator=",">
+                (#{student.studentId},#{student.clazzId},#{student.studentName},#{student.hometown},#{student.birthday})
+            </foreach>
+    </insert>
+<!--    批量删除-->
+    <delete id="batchDelete" parameterType="int">
+        DELETE FROM t_student
+        WHERE student_id in
+        <foreach collection="idList" item="id" index="index" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+<!--批量修改-->
+    <update id="batchUpdate" parameterType="java.util.List">
+        <foreach collection="students" item="student" index="index" open="" close="" separator=";">
+            UPDATE t_student t
+            <set>
+                <if test="student.clazzId != null">
+                    `clazz_id` = #{student.clazzId},
+                </if>
+                <if test="student.studentName != null">
+                    `student_name` = #{student.studentName},
+                </if>
+                <if test="student.hometown != null">
+                    `hometown` = #{student.hometown},
+                </if>
+                <if test="student.birthday != null">
+                    `birthday` = #{student.birthday},
+                </if>
+            </set>
+                WhERE t.student_id = #{student.studentId}
+        </foreach>
+    </update>
+<!--    动态查询-->
+    <select id="dynamicSelect" parameterType="Student" resultType="student">
+        SELECT *
+        FROM t_student
+        WHERE 1 =1
+        <choose>
+            <when test="clazzId != null">
+                AND clazz_id = #{clazzId}
+            </when>
+            <when test="studentName != null">
+                AND student_name = #{studentName}
+            </when>
+            <when test="hometown != null">
+                AND hometown LIKE "%"#{hometown}"%"
+            </when>
+        </choose>
+    </select>
+</mapper>

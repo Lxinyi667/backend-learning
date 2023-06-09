@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img th:src="@{/images/qrcode.png}" >
+<!--<img src="/getAuthCodeImg?count=0" id="authCodeImg" onclick="changeCodeImg(this)">-->
+<script>
+    // function changeCodeImg(codeImg) {
+    //     codeImg.src = "/register/getAuthCodeImg?count=1&timestamp=" + new Date().getTime();
+    // }
+    setTimeout(function (){
+        window.location.reload()
+    },10000)
+</script>
+</body>
+</html>
